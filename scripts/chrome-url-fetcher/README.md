@@ -1,3 +1,3 @@
 `npm i`
 `npx tsc`
-`node dist/summarizeUrl.js`
+`node dist/main.js`
