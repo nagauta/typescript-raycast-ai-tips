@@ -1,7 +1,7 @@
 // src/getChromeUrl.ts
 import { exec } from 'child_process';
 
-function getChromeUrl(): Promise<string> {
+export function getChromeUrl(): Promise<string> {
     return new Promise((resolve, reject) => {
         const script = `
             tell application "Google Chrome"
@@ -24,7 +24,3 @@ function getChromeUrl(): Promise<string> {
         });
     });
 }
-
-getChromeUrl()
-    .then(url => console.log(`Current URL: ${url}`))
-    .catch(error => console.error(error));
