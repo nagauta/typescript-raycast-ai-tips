@@ -1,3 +1,2 @@
 `npm i`
-`npx tsc`
-`node dist/main.js`
+`npx tsc && node dist/main.js`
