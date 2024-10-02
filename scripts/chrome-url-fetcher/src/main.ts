@@ -1,10 +1,9 @@
-import { fethInformationFromUrl, getChromeUrl } from "./lib";
+import { fethInformationFromUrl, getChromeUrl, summarizer } from "./lib";
 
-async function main(){
+export async function main(){
     const url: string  = await getChromeUrl();
-    console.log(`Current XXX: ${url}`);
     const info: string = await fethInformationFromUrl(url);
-    console.log(`Current XXX: ${info}`);
+    const ai = await summarizer();
+    const summary = await ai(info);
+    console.log(`summary: ${summary}`);
 }
-
-main();
