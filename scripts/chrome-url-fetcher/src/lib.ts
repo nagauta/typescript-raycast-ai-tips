@@ -46,13 +46,14 @@ export async function fethInformationFromUrl(url: string): Promise<string> {
 
 export const summarizer = () => {
     const client = new OpenAI({
-        apiKey: process.env['OPENAI_API_KEY'], // This is the default and can be omitted
+        apiKey: process.env['OPENAI_API_KEY'], 
       });
     return async (message: string) => {
         console.log(`start summarizing...`);
         const completion = await client.chat.completions.create({
-	            model: "gpt-4o", // 使いたいGPTのModel
-	            messages: [{ "role": "user", "content": `以下のテキストを日本語でかつmarkdown形式で簡潔に要約してください:\n\n${message}` }],
+	            model: "gpt-4o", 
+	            messages: [{ "role": "user", "content": 
+                    `以下のテキストを日本語でかつmarkdown形式で簡潔に要約してください:\n\n${message}` }],
         });
         return completion.choices[0].message.content;
     }
