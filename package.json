@@ -11,10 +11,10 @@
   "license": "MIT",
   "commands": [
     {
-      "name": "generate-pr-description",
-      "title": "generate pr description",
-      "subtitle": "generate pr description",
-      "description": "generate pr description draft",
+      "name": "summarize-url",
+      "title": "Summarize URL",
+      "subtitle": "Summarize URL",
+      "description": "Summarize the contents of a URL",
       "mode": "view"
     }
   ],

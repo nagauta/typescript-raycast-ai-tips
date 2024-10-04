@@ -6,5 +6,5 @@
 // @raycast.icon 🤩
 // Optional parameters:
 // @raycast.packageName summarize-current-url
-const main = require("./chrome-url-fetcher/dist/main.js")
+const main = require("../chrome-url-fetcher/dist/main.js")
 main.main();
