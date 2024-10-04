@@ -1,9 +1,7 @@
 // src/getChromeUrl.ts
 import { exec } from 'child_process';
 import { chromium } from 'playwright';
-import * as dotenv from 'dotenv';
 import OpenAI from 'openai';
-dotenv.config();
 
 export function getChromeUrl(): Promise<string> {
     return new Promise((resolve, reject) => {
@@ -44,9 +42,9 @@ export async function fethInformationFromUrl(url: string): Promise<string> {
     
 }
 
-export const summarizer = () => {
+export const summarizer = (apiKey: string) => {
     const client = new OpenAI({
-        apiKey: process.env['OPENAI_API_KEY'], 
+        apiKey: apiKey, 
       });
     return async (message: string) => {
         console.log(`start summarizing...`);
