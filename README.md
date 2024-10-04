@@ -13,13 +13,17 @@ Script CommandsでAIを活用したtipsの紹介
 
 #### 日本語でアクティブなWebサイトを翻訳するスクリプトコマンド
 ソースコードは`script/summarizeCurrentUrl.js`を参照すること
-![](assets/script-command-example.png)
+<br>
+<img src="assets/script-command-example.png" width="40%">
 
 ### Extensions
 ExtensionでAIを活用したtipsの紹介
 
 #### 日本語でアクティブなWebサイトを翻訳するExtension
 ソースコードは`src/summarize-url.tsx`を参照すること
+
 `npm i`
 `npm run dev`
-![](assets/extension-example.png)
+
+<br>
+<img src="assets/extension-example.png" width="40%">
